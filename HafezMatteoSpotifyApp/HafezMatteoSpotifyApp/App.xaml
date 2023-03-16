@@ -4,15 +4,10 @@
              x:Class="HafezMatteoSpotifyApp.App">
     <Application.Resources>
         <ResourceDictionary>
+            
             <Color x:Key="PrimaryColor">#1DB954</Color>
             <Color x:Key="SecondaryColor">#191414</Color>
             <Color x:Key="AccentColor">#FFFFFF</Color>
-            
-            <Style TargetType="{x:Type TabbedPage}">
-                <Setter Property="BarBackgroundColor" Value="{StaticResource SecondaryColor}"/>
-                <Setter Property="SelectedTabColor" Value="{StaticResource PrimaryColor}"/>
-                <Setter Property="UnselectedTabColor" Value="{StaticResource AccentColor}"/>
-            </Style>
             
             <Style TargetType="{x:Type Button}">
                 <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
@@ -22,7 +17,6 @@
             <Style TargetType="{x:Type Label}">
                 <Setter Property="TextColor" Value="{StaticResource PrimaryColor}"/>
             </Style>
-            
             
         </ResourceDictionary>
     </Application.Resources>

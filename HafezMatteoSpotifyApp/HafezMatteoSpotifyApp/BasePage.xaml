@@ -5,9 +5,14 @@
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              android:TabbedPage.ToolbarPlacement="Bottom"
              xmlns:hafezMatteoSpotifyApp="clr-namespace:HafezMatteoSpotifyApp;assembly=HafezMatteoSpotifyApp"
-             x:Class="HafezMatteoSpotifyApp.BasePage">
+             x:Class="HafezMatteoSpotifyApp.BasePage"
+             BarBackgroundColor="{StaticResource SecondaryColor}"
+             UnselectedTabColor="{StaticResource AccentColor}"
+             SelectedTabColor="{StaticResource PrimaryColor}">
+    
     <hafezMatteoSpotifyApp:StartPage Title="1"/>
     <hafezMatteoSpotifyApp:ArtistPage Title="2"/>
     <hafezMatteoSpotifyApp:AlbumPage Title="3"/>
     <hafezMatteoSpotifyApp:CustomPage Title="4"/>
+    
 </TabbedPage>
