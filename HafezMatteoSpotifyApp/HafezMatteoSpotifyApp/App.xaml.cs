@@ -10,7 +10,7 @@ namespace HafezMatteoSpotifyApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new BasePage();
         }
 
         protected override void OnStart()

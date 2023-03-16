@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace HafezMatteoSpotifyApp
 {
-    public partial class MainPage : ContentPage
+    public partial class StartPage : ContentPage
     {
-        public MainPage()
+        public StartPage()
         {
             InitializeComponent();
         }
