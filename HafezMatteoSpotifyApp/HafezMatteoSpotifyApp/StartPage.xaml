@@ -4,14 +4,14 @@
              xmlns:local="clr-namespace:HafezMatteoSpotifyApp;assembly=HafezMatteoSpotifyApp"
              x:Class="HafezMatteoSpotifyApp.StartPage">
 
-    <StackLayout>
-        
+    <FlexLayout>
+        <!-- Titre -->
         <Frame BackgroundColor="{StaticResource PrimaryColor}" Padding="24" CornerRadius="0">
             <Label Text="Bienvenue sur notre application !" HorizontalTextAlignment="Center" TextColor="{StaticResource AccentColor}" FontSize="36"/>
         </Frame>
-        <Label Text="Xamarin X Spotify" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Xamarin x Spotify" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="Proposé par MADI Hafez et NADLER CAMPOURCY Mattéo" FontSize="16" Padding="30,0,30,0"/>
-        
+        <!-- Images -->
         <Grid Margin="20,5,20,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
@@ -21,11 +21,57 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
+            
             <Image Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.xamarin_logo.png}" Aspect="AspectFit"/>
             <Label Grid.Column="1" Text="x" FontSize="44" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             <Image Grid.Column="2" Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.spotify_logo.png}" Aspect="AspectFit" Scale="0.6"/>
         </Grid>
+        <!-- Damier de couleurs -->
+        <Button Text="CLIQUEZ MOI !"/>
         
-    </StackLayout>
+        <Grid Padding="20,5,20,5">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <BoxView Grid.Row="0" Grid.Column="0" Color="{StaticResource PrimaryColor}"/>
+            <BoxView Grid.Row="0" Grid.Column="1" Color="{StaticResource SecondaryColor}"/>
+            <BoxView Grid.Row="0" Grid.Column="2" Color="{StaticResource AccentColor}"/>
+            <BoxView Grid.Row="0" Grid.Column="3" Color="{StaticResource PrimaryColor}"/>
+            <BoxView Grid.Row="0" Grid.Column="4" Color="{StaticResource SecondaryColor}"/>
+            
+            <BoxView Grid.Row="1" Grid.Column="0" Color="{StaticResource AccentColor}"/>
+            <BoxView Grid.Row="1" Grid.Column="1" Color="{StaticResource PrimaryColor}"/>
+            <BoxView Grid.Row="1" Grid.Column="2" Color="{StaticResource SecondaryColor}"/>
+            <BoxView Grid.Row="1" Grid.Column="3" Color="{StaticResource AccentColor}"/>
+            <BoxView Grid.Row="1" Grid.Column="4" Color="{StaticResource PrimaryColor}"/>
+            
+            <BoxView Grid.Row="2" Grid.Column="0" Color="{StaticResource SecondaryColor}"/>
+            <BoxView Grid.Row="2" Grid.Column="1" Color="{StaticResource AccentColor}"/>
+            <BoxView Grid.Row="2" Grid.Column="2" Color="{StaticResource PrimaryColor}"/>
+            <BoxView Grid.Row="2" Grid.Column="3" Color="{StaticResource SecondaryColor}"/>
+            <BoxView Grid.Row="2" Grid.Column="4" Color="{StaticResource AccentColor}"/>
+            
+            <BoxView Grid.Row="3" Grid.Column="0" Color="{StaticResource PrimaryColor}"/>
+            <BoxView Grid.Row="3" Grid.Column="1" Color="{StaticResource SecondaryColor}"/>
+            <BoxView Grid.Row="3" Grid.Column="2" Color="{StaticResource AccentColor}"/>
+            <BoxView Grid.Row="3" Grid.Column="3" Color="{StaticResource PrimaryColor}"/>
+            <BoxView Grid.Row="3" Grid.Column="4" Color="{StaticResource SecondaryColor}"/>
+            
+        </Grid>
+        
+    </FlexLayout>
     
 </ContentPage>
