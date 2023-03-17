@@ -4,32 +4,27 @@
              xmlns:local="clr-namespace:HafezMatteoSpotifyApp;assembly=HafezMatteoSpotifyApp"
              x:Class="HafezMatteoSpotifyApp.StartPage">
 
-    <FlexLayout>
+    <StackLayout>
         <!-- Titre -->
         <Frame BackgroundColor="{StaticResource PrimaryColor}" Padding="24" CornerRadius="0">
             <Label Text="Bienvenue sur notre application !" HorizontalTextAlignment="Center" TextColor="{StaticResource AccentColor}" FontSize="36"/>
         </Frame>
-        <Label Text="Xamarin x Spotify" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Xamarin x Spotify" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10,30,10"/>
         <Label Text="Proposé par MADI Hafez et NADLER CAMPOURCY Mattéo" FontSize="16" Padding="30,0,30,0"/>
         <!-- Images -->
-        <Grid Margin="20,5,20,5">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="22"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"></RowDefinition>
-            </Grid.RowDefinitions>
-            
-            <Image Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.xamarin_logo.png}" Aspect="AspectFit"/>
-            <Label Grid.Column="1" Text="x" FontSize="44" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-            <Image Grid.Column="2" Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.spotify_logo.png}" Aspect="AspectFit" Scale="0.6"/>
-        </Grid>
+        <FlexLayout AlignItems="Center" JustifyContent="SpaceEvenly" Padding="30,10,30,10">
+            <Frame BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100">
+                <Image Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.xamarin_logo.png}" Scale="1.7"/>
+            </Frame>
+            <Label Text="x" FontSize="44" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Frame BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100">
+                <Image Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.spotify_logo.png}"/>
+            </Frame>
+        </FlexLayout>
         <!-- Damier de couleurs -->
-        <Button Text="CLIQUEZ MOI !"/>
+        <Button Text="CLIQUEZ MOI !" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
         
-        <Grid Padding="20,5,20,5">
+        <Grid Padding="30,10,30,10">
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
@@ -40,10 +35,10 @@
             </Grid.ColumnDefinitions>
             
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
             </Grid.RowDefinitions>
             
             <BoxView Grid.Row="0" Grid.Column="0" Color="{StaticResource PrimaryColor}"/>
@@ -72,6 +67,6 @@
             
         </Grid>
         
-    </FlexLayout>
+    </StackLayout>
     
 </ContentPage>
