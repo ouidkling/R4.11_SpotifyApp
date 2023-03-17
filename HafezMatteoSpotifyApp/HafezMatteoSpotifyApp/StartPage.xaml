@@ -1,14 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HafezMatteoSpotifyApp;assembly=HafezMatteoSpotifyApp"
              x:Class="HafezMatteoSpotifyApp.StartPage">
 
     <StackLayout>
+        
         <Frame BackgroundColor="{StaticResource PrimaryColor}" Padding="24" CornerRadius="0">
             <Label Text="Bienvenue sur notre application !" HorizontalTextAlignment="Center" TextColor="{StaticResource AccentColor}" FontSize="36"/>
         </Frame>
         <Label Text="Xamarin X Spotify" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="Proposé par MADI Hafez et NADLER CAMPOURCY Mattéo" FontSize="16" Padding="30,0,30,0"/>
+        
+        <Grid Margin="20,5,20,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="22"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.xamarin_logo.png}" Aspect="AspectFit"/>
+            <Label Grid.Column="1" Text="x" FontSize="44" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Image Grid.Column="2" Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.spotify_logo.png}" Aspect="AspectFit" Scale="0.6"/>
+        </Grid>
+        
     </StackLayout>
     
 </ContentPage>
