@@ -10,7 +10,7 @@
             <Label Text="Bienvenue sur notre application !" HorizontalTextAlignment="Center" TextColor="{StaticResource AccentColor}" FontSize="36"/>
         </Frame>
         <Label Text="Xamarin x Spotify" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10,30,10"/>
-        <Label Text="Proposé par MADI Hafez et NADLER CAMPOURCY Mattéo" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Proposée par MADI Hafez et NADLER CAMPOURCY Mattéo" FontSize="16" Padding="30,0,30,0"/>
         <!-- Images -->
         <FlexLayout AlignItems="Center" JustifyContent="SpaceEvenly" Padding="30,10,30,10">
             <Frame BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100">
@@ -22,7 +22,7 @@
             </Frame>
         </FlexLayout>
         <!-- Damier de couleurs -->
-        <Button Text="CLIQUEZ MOI !" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+        <Button Text="CLIQUEZ MOI !" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
         
         <Grid Padding="30,10,30,10">
             
