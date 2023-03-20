@@ -4,7 +4,8 @@ namespace HafezMatteoSpotifyApp
 {
     public class CheckerboardBox
     {
-        public int boxType { get; set; }
-        public Color boxColor { get; set; }
+        public string BoxRow { get; set; }
+        public string BoxColumn { get; set; }
+        public string BoxColor { get; set; }
     }
 }

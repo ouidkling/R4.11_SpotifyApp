@@ -1,33 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:HafezMatteoSpotifyApp;assembly=HafezMatteoSpotifyApp"
-             x:Class="HafezMatteoSpotifyApp.StartPage">
+﻿<?xml version="1.0" encoding="utf-8"?>
 
-    <StackLayout>
-        <!-- Titre -->
-        <Frame BackgroundColor="{StaticResource PrimaryColor}" Padding="24" CornerRadius="0">
-            <Label Text="Bienvenue sur notre application !" HorizontalTextAlignment="Center" TextColor="{StaticResource AccentColor}" FontSize="36"/>
-        </Frame>
-        <Label Text="Xamarin x Spotify" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10,30,10"/>
-        <Label Text="Proposée par MADI Hafez et NADLER CAMPOURCY Mattéo" FontSize="16" Padding="30,0,30,0"/>
-        <!-- Images -->
-        <FlexLayout AlignItems="Center" JustifyContent="SpaceEvenly" Padding="30,10,30,10">
-            <Frame BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100">
-                <Image Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.xamarin_logo.png}" Scale="1.7"/>
-            </Frame>
-            <Label Text="x" FontSize="44" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-            <Frame BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100">
-                <Image Source="{local:ImageResource HafezMatteoSpotifyApp.Resources.Images.spotify_logo.png}"/>
-            </Frame>
-        </FlexLayout>
-        <!-- Damier de couleurs -->
-        <Button Text="CLIQUEZ MOI !" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="Button_OnClicked" />
-        
-        <Grid Padding="30,10,30,10">
-            <Grid.BindingContext>
-                <local:Checkerboard />
-            </Grid.BindingContext>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HafezMatteoSpotifyApp.CheckerboardView">
+    <ContentView.Content>
+        <Grid BindingContext="{Binding .}" x:Name="CheckerboardGrid" Padding="30,10,30,10">
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
@@ -44,7 +21,7 @@
                 <RowDefinition Height="50"></RowDefinition>
             </Grid.RowDefinitions>
             
-            <BoxView Grid.Row="{Binding BoxRow}" Grid.Column="{Binding BoxColumn}" Color="{Binding BoxColor}"/>
+            <BoxView Grid.Row="{Binding Row}"></BoxView>
             
             <!--
             <BoxView Grid.Row="0" Grid.Column="0" Color="{StaticResource PrimaryColor}"/>
@@ -73,7 +50,5 @@
             -->
             
         </Grid>
-        
-    </StackLayout>
-    
-</ContentPage>
+    </ContentView.Content>
+</ContentView>

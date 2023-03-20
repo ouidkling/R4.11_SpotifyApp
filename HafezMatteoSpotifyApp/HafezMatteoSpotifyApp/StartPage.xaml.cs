@@ -14,5 +14,10 @@ namespace HafezMatteoSpotifyApp
             InitializeComponent();
             BindingContext = new Checkerboard();
         }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            // Checkerboard.ChangeColor();
+        }
     }
 }

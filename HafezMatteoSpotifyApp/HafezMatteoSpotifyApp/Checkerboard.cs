@@ -23,30 +23,143 @@ namespace HafezMatteoSpotifyApp
         {
             Items = new ObservableCollection<CheckerboardBox>()
             {
+                // Première ligne
                 new CheckerboardBox()
                 {
-                    boxType = 1,
-                    boxColor = (Color) Application.Current.Resources["PrimaryColor"],
+                    BoxRow = "0",
+                    BoxColumn = "0",
+                    BoxColor = Application.Current.Resources["PrimaryColor"].ToString(),
                 },
                 new CheckerboardBox()
                 {
-                    boxType = 2,
-                    boxColor =  (Color) Application.Current.Resources["SecondaryColor"],
+                    BoxRow = "0",
+                    BoxColumn = "1",
+                    BoxColor = Application.Current.Resources["SecondaryColor"].ToString(),
                 },
                 new CheckerboardBox()
                 {
-                    boxType = 3,
-                    boxColor =  (Color) Application.Current.Resources["AccentColor"],
+                    BoxRow = "0",
+                    BoxColumn = "2",
+                    BoxColor = Application.Current.Resources["AccentColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "0",
+                    BoxColumn = "3",
+                    BoxColor = Application.Current.Resources["PrimaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "0",
+                    BoxColumn = "4",
+                    BoxColor = Application.Current.Resources["SecondaryColor"].ToString(),
+                },
+                // Deuxième ligne
+                new CheckerboardBox()
+                {
+                    BoxRow = "1",
+                    BoxColumn = "0",
+                    BoxColor = Application.Current.Resources["AccentColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "1",
+                    BoxColumn = "1",
+                    BoxColor = Application.Current.Resources["PrimaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "1",
+                    BoxColumn = "2",
+                    BoxColor = Application.Current.Resources["SecondaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "1",
+                    BoxColumn = "3",
+                    BoxColor = Application.Current.Resources["AccentColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "1",
+                    BoxColumn = "4",
+                    BoxColor = Application.Current.Resources["PrimaryColor"].ToString(),
+                },
+                // Troisième ligne
+                new CheckerboardBox()
+                {
+                    BoxRow = "2",
+                    BoxColumn = "0",
+                    BoxColor = Application.Current.Resources["SecondaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "2",
+                    BoxColumn = "1",
+                    BoxColor = Application.Current.Resources["AccentColor"].ToString(),
+                },new CheckerboardBox()
+                {
+                    BoxRow = "2",
+                    BoxColumn = "2",
+                    BoxColor = Application.Current.Resources["PrimaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "2",
+                    BoxColumn = "3",
+                    BoxColor = Application.Current.Resources["SecondaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "2",
+                    BoxColumn = "4",
+                    BoxColor = Application.Current.Resources["AccentColor"].ToString(),
+                },
+                // Quatrième ligne
+                new CheckerboardBox()
+                {
+                    BoxRow = "3",
+                    BoxColumn = "0",
+                    BoxColor = Application.Current.Resources["PrimaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "3",
+                    BoxColumn = "1",
+                    BoxColor = Application.Current.Resources["SecondaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "3",
+                    BoxColumn = "2",
+                    BoxColor = Application.Current.Resources["AccentColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "3",
+                    BoxColumn = "3",
+                    BoxColor = Application.Current.Resources["PrimaryColor"].ToString(),
+                },
+                new CheckerboardBox()
+                {
+                    BoxRow = "3",
+                    BoxColumn = "4",
+                    BoxColor = Application.Current.Resources["SecondaryColor"].ToString(),
                 },
             };
         }
         
         public void ChangeColor()
         {
-            var temp = Items[0];
-            Items[0] = Items[1];
-            Items[1] = Items[2];
-            Items[2] = temp;
+            foreach (var item in Items)
+            {
+                if (item.BoxColor == Application.Current.Resources["PrimaryColor"].ToString())
+                    item.BoxColor = Application.Current.Resources["SecondaryColor"].ToString();
+                else if (item.BoxColor == Application.Current.Resources["SecondaryColor"].ToString())
+                    item.BoxColor = Application.Current.Resources["AccentColor"].ToString();
+                else if (item.BoxColor == Application.Current.Resources["AccentColor"].ToString())
+                    item.BoxColor = Application.Current.Resources["PrimaryColor"].ToString();
+            }
         }
     }
 }
