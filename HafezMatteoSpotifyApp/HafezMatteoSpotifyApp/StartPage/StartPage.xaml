@@ -24,7 +24,7 @@
         <!-- Damier de couleurs -->
         <Button Text="CLIQUEZ MOI !" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="Button_OnClicked" />
         
-        <Grid Padding="30,10,30,10">
+        <Grid x:Name="CheckerboardGrid" Padding="30,10,30,10">
             <Grid.BindingContext>
                 <local:Checkerboard />
             </Grid.BindingContext>
@@ -47,7 +47,7 @@
             <BoxView Grid.Row="{Binding BoxRow}" Grid.Column="{Binding BoxColumn}" Color="{Binding BoxColor}"/>
             
             <!--
-            <BoxView Grid.Row="0" Grid.Column="0" Color="{StaticResource PrimaryColor}"/>
+            <BoxView Grid.Row="0" Grid.Column="0" Color="{Binding Color}"/>
             <BoxView Grid.Row="0" Grid.Column="1" Color="{StaticResource SecondaryColor}"/>
             <BoxView Grid.Row="0" Grid.Column="2" Color="{StaticResource AccentColor}"/>
             <BoxView Grid.Row="0" Grid.Column="3" Color="{StaticResource PrimaryColor}"/>
