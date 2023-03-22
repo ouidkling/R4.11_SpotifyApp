@@ -27,15 +27,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="StartPage\CheckerboardView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="StartPage\StartPage.xaml.cs">
-      <DependentUpon>StartPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="BasePage.xaml.cs">
+    <Compile Update="MainPage.xaml.cs">
       <DependentUpon>BasePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:extension="clr-namespace:HafezMatteoSpotifyApp.Extension;assembly=HafezMatteoSpotifyApp"
+             x:Class="HafezMatteoSpotifyApp.StartPage">
+
+    <StackLayout>
+        <!-- Titre -->
+        <Frame BackgroundColor="{StaticResource PrimaryColor}" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenue sur notre application !" HorizontalTextAlignment="Center" TextColor="{StaticResource AccentColor}" FontSize="36"/>
+        </Frame>
+        <Label Text="Xamarin x Spotify" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,10"/>
+        <Label Text="Proposée par MADI Hafez et NADLER CAMPOURCY Mattéo" FontSize="16" Padding="30,0"/>
+        <!-- Images -->
+        <FlexLayout AlignItems="Center" JustifyContent="SpaceEvenly" Padding="30,10">
+            <Frame BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100">
+                <Image Source="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.xamarin_logo.png}" Scale="1.7"/>
+            </Frame>
+            <Label Text="x" FontSize="44" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Frame BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100">
+                <Image Source="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.spotify_logo.png}"/>
+            </Frame>
+        </FlexLayout>
+        <!-- Damier de couleurs -->
+        <Button Text="CLIQUEZ MOI !" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="Button_OnClicked" />
+
+        <StackLayout Padding="30, 10" HeightRequest="200">
+            <FlexLayout Direction="Row">
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding ThirdColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"/>
+            </FlexLayout>
+            <FlexLayout Direction="Row">
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding ThirdColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding ThirdColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"/>
+            </FlexLayout>
+            <FlexLayout Direction="Row">
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding ThirdColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding ThirdColor}"/>
+            </FlexLayout>
+            <FlexLayout Direction="Row">
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding ThirdColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding FirstColor}"/>
+                <BoxView FlexLayout.Basis="20%" BackgroundColor="{Binding SecondColor}"/>
+            </FlexLayout>
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>

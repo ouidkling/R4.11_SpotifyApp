@@ -9,6 +9,12 @@
             <Color x:Key="SecondaryColor">#191414</Color>
             <Color x:Key="AccentColor">#FFFFFF</Color>
             
+            <Style TargetType="TabBar">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource SecondaryColor}" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource AccentColor}" />
+            </Style>
+            
             <Style TargetType="{x:Type Button}">
                 <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
                 <Setter Property="TextColor" Value="{StaticResource SecondaryColor}"/>
@@ -17,7 +23,7 @@
             <Style TargetType="{x:Type Label}">
                 <Setter Property="TextColor" Value="{StaticResource PrimaryColor}"/>
             </Style>
-            
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

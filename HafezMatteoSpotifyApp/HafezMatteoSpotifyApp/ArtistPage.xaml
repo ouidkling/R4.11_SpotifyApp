@@ -5,9 +5,8 @@
              x:Class="HafezMatteoSpotifyApp.ArtistPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="I am Artist Page !"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+            <Image x:Name="PhotoArtiste"/>
+            <Label x:Name="NomArtiste"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -3,7 +3,7 @@ using System.Reflection;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace HafezMatteoSpotifyApp
+namespace HafezMatteoSpotifyApp.Extension
 {
     [ContentProperty (nameof(Source))]
     public class ImageResourceExtension : IMarkupExtension
