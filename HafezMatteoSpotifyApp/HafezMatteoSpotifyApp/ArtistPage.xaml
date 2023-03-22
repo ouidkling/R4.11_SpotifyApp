@@ -7,6 +7,10 @@
         <StackLayout>
             <Image x:Name="PhotoArtiste"/>
             <Label x:Name="NomArtiste"/>
+            <Label x:Name="GenreArtiste1"/>
+            <Label x:Name="GenreArtiste2"/>
+            <Label x:Name="FollowersArtiste"/>
+            <Label x:Name="PopulariteArtiste"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
