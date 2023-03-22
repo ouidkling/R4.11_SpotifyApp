@@ -3,9 +3,10 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:hafezMatteoSpotifyApp="clr-namespace:HafezMatteoSpotifyApp;assembly=HafezMatteoSpotifyApp"
-             x:Class="HafezMatteoSpotifyApp.BasePage">
+             x:Class="HafezMatteoSpotifyApp.MainPage"
+             NavBarIsVisible="False">
     
-    <TabBar >
+    <TabBar>
         <Tab Title="1">
             <ShellContent>
                 <hafezMatteoSpotifyApp:StartPage />

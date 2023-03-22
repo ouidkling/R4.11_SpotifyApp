@@ -1,9 +1,5 @@
 ﻿using HafezMatteoSpotifyApp.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HafezMatteoSpotifyApp.Service;
 using Xamarin.Forms;
 
@@ -16,7 +12,6 @@ namespace HafezMatteoSpotifyApp
             InitializeComponent();
             BindingContext = StartPageViewModel.Instance;
             SpotifyService.Instance.ConnectSpotify();
-
         }
 
         private void Button_OnClicked(object sender, EventArgs e)

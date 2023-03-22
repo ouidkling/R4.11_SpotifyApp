@@ -1,8 +1,4 @@
-﻿using HafezMatteoSpotifyApp.Service;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
+﻿using Xamarin.Forms;
 
 namespace HafezMatteoSpotifyApp.ViewModels
 {
@@ -16,9 +12,9 @@ namespace HafezMatteoSpotifyApp.ViewModels
 
         public StartPageViewModel()
         {
-            FirstColor = Color.Blue;
-            SecondColor = Color.Pink;
-            ThirdColor = Color.Aqua;
+            FirstColor = Color.FromHex("#1DB954");
+            SecondColor = Color.FromHex("#191414");
+            ThirdColor = Color.FromHex("#FFFFFF");
         }
 
         public Color FirstColor
@@ -59,18 +55,10 @@ namespace HafezMatteoSpotifyApp.ViewModels
 
         public void UpdateColors()
         {
-            if (FirstColor == Color.Red)
-            {
-                FirstColor = Color.Blue;
-                SecondColor = Color.Pink;
-                ThirdColor = Color.Aqua;
-            }
-            else
-            {
-                FirstColor = Color.Red;
-                SecondColor = Color.Green;
-                ThirdColor = Color.Yellow;
-            }
+            var temp = ThirdColor;
+            ThirdColor = SecondColor;
+            SecondColor = FirstColor;
+            FirstColor = temp;
         }
 
     }

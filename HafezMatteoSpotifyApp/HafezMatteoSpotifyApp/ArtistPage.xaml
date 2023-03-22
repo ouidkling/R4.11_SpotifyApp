@@ -5,12 +5,12 @@
              x:Class="HafezMatteoSpotifyApp.ArtistPage">
     <ContentPage.Content>
         <StackLayout>
-            <Image x:Name="PhotoArtiste"/>
-            <Label x:Name="NomArtiste"/>
-            <Label x:Name="GenreArtiste1"/>
-            <Label x:Name="GenreArtiste2"/>
-            <Label x:Name="FollowersArtiste"/>
-            <Label x:Name="PopulariteArtiste"/>
+            <Image x:Name="ArtistPicture"/>
+            <Label x:Name="ArtistName"/>
+            <Label x:Name="ArtistGenre1"/>
+            <Label x:Name="ArtistGenre2"/>
+            <Label x:Name="ArtistFollowers"/>
+            <Label x:Name="ArtistPopularity"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
