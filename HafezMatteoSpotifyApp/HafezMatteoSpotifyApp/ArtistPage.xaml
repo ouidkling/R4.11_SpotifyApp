@@ -35,8 +35,26 @@
                 </StackLayout>
             </Frame>
             
-            <Label x:Name="ArtistFollowers"/>
-            <Label x:Name="ArtistPopularity"/>
+            <!-- Nombre de followers & popularité -->
+            <FlexLayout AlignItems="Center" JustifyContent="SpaceBetween" Margin="30,10">
+                <Frame BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="20" VerticalOptions="Start">
+                    <StackLayout>
+                        <Label Text="Followers" TextColor="{StaticResource PrimaryColor}" FontSize="20"/>
+                        <Frame BackgroundColor="{StaticResource AccentColor}" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="75" WidthRequest="75">
+                            <Label x:Name="ArtistFollowers" TextColor="{StaticResource SecondaryColor}" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="20" VerticalOptions="Start">
+                    <StackLayout>
+                        <Label Text="Popularité" TextColor="{StaticResource PrimaryColor}" FontSize="20"/>
+                        <Frame BackgroundColor="{StaticResource AccentColor}" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="75" WidthRequest="75">
+                            <Label x:Name="ArtistPopularity" TextColor="{StaticResource SecondaryColor}" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </FlexLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

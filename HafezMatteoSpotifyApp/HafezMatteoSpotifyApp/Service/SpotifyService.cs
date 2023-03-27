@@ -8,7 +8,7 @@ namespace HafezMatteoSpotifyApp.Service
 {
     public class SpotifyService
     {
-        private const string TokenSpotify = "BQC1et_GI_nDw0dCVhd2ZMmPNf2lBCPwTyFHobz9Ty7kTGT8LbzRT_K2QYF8urYXnxBjG-X4CQciJtVWGAv5MQgnWBO-i_dWv53iLuymwmV2ZUgrla9I";
+        private const string TokenSpotify = "BQCZJBcm7f5eO3XQXzS5DVwTGVeZFRdqXPrfgtsjHFwfGeX3K4Eti7YW4TB9EuTXl0_jjCBC4XFDIqziGYP4H4t-2o3d9_uJteKmG6f449kQ6_yTIx6D";
         private SpotifyClient _spotifyClient;
         #region Instance
 

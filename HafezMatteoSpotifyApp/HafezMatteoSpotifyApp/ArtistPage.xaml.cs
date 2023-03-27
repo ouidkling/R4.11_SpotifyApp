@@ -16,7 +16,7 @@ namespace HafezMatteoSpotifyApp
             this.ArtistName.Text = artistClient.Name;
             this.ArtistGenre.ItemsSource = artistClient.Genres;
             this.ArtistFollowers.Text = artistClient.Followers.Total.ToString();
-            this.ArtistPopularity.Text = artistClient.Popularity.ToString();
+            this.ArtistPopularity.Text = $"{artistClient.Popularity.ToString()}%";
         }
     }
 }
