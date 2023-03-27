@@ -11,11 +11,11 @@ namespace HafezMatteoSpotifyApp
         public ArtistPage()
         {
             InitializeComponent();
-            FullArtist artistClient = SpotifyService.Instance.GetSpotifyClient().Artists.Get("4IF11U0nzFhAaLDGZH3vSx").Result;
+            FullArtist artistClient = SpotifyService.Instance.GetSpotifyClient().Artists.Get("65C6Unk7nhg2aCnVuAPMo8").Result;
             this.ArtistPicture.Source = artistClient.Images[0].Url;
             this.ArtistName.Text = artistClient.Name;
             this.ArtistGenre1.Text = artistClient.Genres[0];
-            this.ArtistGenre2.Text = artistClient.Genres[1];
+            this.ArtistGenre2.Text = artistClient.Genres[3];
             this.ArtistFollowers.Text = artistClient.Followers.Total.ToString();
             this.ArtistPopularity.Text = artistClient.Popularity.ToString();
         }
