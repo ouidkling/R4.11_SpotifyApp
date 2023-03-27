@@ -5,9 +5,10 @@
              x:Class="HafezMatteoSpotifyApp.ArtistPage">
     <ContentPage.Content>
         <StackLayout>
+            
+            <!-- Image & Nom de l'artiste -->
             <Frame BackgroundColor="{StaticResource PrimaryColor}" Padding="24" CornerRadius="0">
                 <StackLayout>
-                    <!-- Image & Nom de l'artiste -->
                     <Frame CornerRadius="20" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center">
                         <Image x:Name="ArtistPicture" Aspect="AspectFill" Margin="-20"/>
                     </Frame>
@@ -15,8 +16,25 @@
                 </StackLayout>
             </Frame>
             
-            <Label x:Name="ArtistGenre1"/>
-            <Label x:Name="ArtistGenre2"/>
+            <!-- Genres de l'artiste -->
+            <Frame BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="20" Margin="30" VerticalOptions="Start">
+                <StackLayout HeightRequest="75">
+                    <Label Text="Genres" TextColor="{StaticResource PrimaryColor}" FontSize="20"/>
+                    <CarouselView x:Name="ArtistGenre" PeekAreaInsets="30">
+                        <CarouselView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10" SnapPointsType="MandatorySingle" SnapPointsAlignment="Center" />
+                        </CarouselView.ItemsLayout>
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="{StaticResource AccentColor}" CornerRadius="10" Padding="10">
+                                    <Label Text="{Binding .}" TextTransform="Uppercase" TextColor="{StaticResource SecondaryColor}" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </Frame>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                </StackLayout>
+            </Frame>
+            
             <Label x:Name="ArtistFollowers"/>
             <Label x:Name="ArtistPopularity"/>
         </StackLayout>
