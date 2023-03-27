@@ -3,26 +3,27 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:hafezMatteoSpotifyApp="clr-namespace:HafezMatteoSpotifyApp;assembly=HafezMatteoSpotifyApp"
+             xmlns:extension="clr-namespace:HafezMatteoSpotifyApp.Extension;assembly=HafezMatteoSpotifyApp"
              x:Class="HafezMatteoSpotifyApp.MainPage"
              NavBarIsVisible="False">
     
     <TabBar>
-        <Tab Title="1">
+        <Tab Title="1" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.home.png}">
             <ShellContent>
                 <hafezMatteoSpotifyApp:StartPage />
             </ShellContent>
         </Tab>
-        <Tab Title="2">
+        <Tab Title="2" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.artist.png}">
             <ShellContent >
                 <hafezMatteoSpotifyApp:ArtistPage />
             </ShellContent>
         </Tab>
-        <Tab Title="3">
+        <Tab Title="3" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.album.png}">
             <ShellContent >
                 <hafezMatteoSpotifyApp:AlbumPage />
             </ShellContent>
         </Tab>
-        <Tab Title="4">
+        <Tab Title="4" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.custom.png}">
             <ShellContent>
                 <hafezMatteoSpotifyApp:CustomPage />
             </ShellContent>

@@ -24,6 +24,14 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Images\spotify_logo.png" />
     <EmbeddedResource Include="Resources\Images\xamarin_logo.png" />
+    <None Remove="Resources\Images\album.png" />
+    <EmbeddedResource Include="Resources\Images\album.png" />
+    <None Remove="Resources\Images\artist.png" />
+    <EmbeddedResource Include="Resources\Images\artist.png" />
+    <None Remove="Resources\Images\custom.png" />
+    <EmbeddedResource Include="Resources\Images\custom.png" />
+    <None Remove="Resources\Images\home.png" />
+    <EmbeddedResource Include="Resources\Images\home.png" />
   </ItemGroup>
 
   <ItemGroup>
