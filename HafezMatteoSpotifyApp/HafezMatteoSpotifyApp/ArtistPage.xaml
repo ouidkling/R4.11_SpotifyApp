@@ -7,27 +7,53 @@
         <StackLayout>
             
             <!-- Image & Nom de l'artiste -->
-            <Frame BackgroundColor="{StaticResource PrimaryColor}" Padding="24" CornerRadius="0">
+            <Frame BackgroundColor="{StaticResource PrimaryColor}" 
+                   CornerRadius="0"
+                   Padding="24">
                 <StackLayout>
-                    <Frame CornerRadius="20" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center">
-                        <Image x:Name="ArtistPicture" Aspect="AspectFill" Margin="-20"/>
+                    <Frame HorizontalOptions="Center"
+                           CornerRadius="20"
+                           HeightRequest="200" 
+                           WidthRequest="200">
+                        <Image x:Name="ArtistPicture" 
+                               Aspect="AspectFill" 
+                               Margin="-20" />
                     </Frame>
-                    <Label x:Name="ArtistName" HorizontalTextAlignment="Center" TextColor="{StaticResource AccentColor}" FontSize="36"/>
+                    <Label x:Name="ArtistName" 
+                           TextColor="{StaticResource AccentColor}"
+                           FontSize="36"
+                           HorizontalTextAlignment="Center" />
                 </StackLayout>
             </Frame>
             
             <!-- Genres de l'artiste -->
-            <Frame BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="20" Margin="30" VerticalOptions="Start">
+            <Frame BackgroundColor="{StaticResource SecondaryColor}"
+                   VerticalOptions="Start"
+                   CornerRadius="20"
+                   Margin="30">
                 <StackLayout HeightRequest="75">
-                    <Label Text="Genres" TextColor="{StaticResource PrimaryColor}" FontSize="20"/>
+                    <Label 
+                        Text="Genres" 
+                        TextColor="{StaticResource PrimaryColor}" 
+                        FontSize="20" />
                     <CarouselView x:Name="ArtistGenre" PeekAreaInsets="30">
                         <CarouselView.ItemsLayout>
-                            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10" SnapPointsType="MandatorySingle" SnapPointsAlignment="Center" />
+                            <LinearItemsLayout Orientation="Horizontal" 
+                                               SnapPointsType="MandatorySingle" 
+                                               SnapPointsAlignment="Center" 
+                                               ItemSpacing="10" />
                         </CarouselView.ItemsLayout>
                         <CarouselView.ItemTemplate>
                             <DataTemplate>
-                                <Frame BackgroundColor="{StaticResource AccentColor}" CornerRadius="10" Padding="10">
-                                    <Label Text="{Binding .}" TextTransform="Uppercase" TextColor="{StaticResource SecondaryColor}" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Frame BackgroundColor="{StaticResource AccentColor}" 
+                                       CornerRadius="10" 
+                                       Padding="10">
+                                    <Label Text="{Binding .}" 
+                                           TextColor="{StaticResource SecondaryColor}" 
+                                           FontSize="16" 
+                                           FontAttributes="Bold" 
+                                           TextTransform="Uppercase" 
+                                           HorizontalTextAlignment="Center" />
                                 </Frame>
                             </DataTemplate>
                         </CarouselView.ItemTemplate>
@@ -36,20 +62,50 @@
             </Frame>
             
             <!-- Nombre de followers & popularité -->
-            <FlexLayout AlignItems="Center" JustifyContent="SpaceBetween" Margin="30,10">
-                <Frame BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="20" VerticalOptions="Start">
+            <FlexLayout AlignItems="Center"
+                        JustifyContent="SpaceBetween" 
+                        Margin="30,10">
+                <Frame BackgroundColor="{StaticResource SecondaryColor}" 
+                       CornerRadius="20" 
+                       VerticalOptions="Start">
                     <StackLayout>
-                        <Label Text="Followers" TextColor="{StaticResource PrimaryColor}" FontSize="20"/>
-                        <Frame BackgroundColor="{StaticResource AccentColor}" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="75" WidthRequest="75">
-                            <Label x:Name="ArtistFollowers" TextColor="{StaticResource SecondaryColor}" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Text="Followers"
+                               TextColor="{StaticResource PrimaryColor}"
+                               FontSize="20" />
+                        <Frame BackgroundColor="{StaticResource AccentColor}" 
+                               CornerRadius="100" 
+                               HeightRequest="75" 
+                               WidthRequest="75"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center">
+                            <Label x:Name="ArtistFollowers" 
+                                   TextColor="{StaticResource SecondaryColor}"
+                                   FontSize="20" 
+                                   FontAttributes="Bold"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center" />
                         </Frame>
                     </StackLayout>
                 </Frame>
-                <Frame BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="20" VerticalOptions="Start">
+                <Frame BackgroundColor="{StaticResource SecondaryColor}" 
+                       CornerRadius="20" 
+                       VerticalOptions="Start">
                     <StackLayout>
-                        <Label Text="Popularité" TextColor="{StaticResource PrimaryColor}" FontSize="20"/>
-                        <Frame BackgroundColor="{StaticResource AccentColor}" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="75" WidthRequest="75">
-                            <Label x:Name="ArtistPopularity" TextColor="{StaticResource SecondaryColor}" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Text="Popularité" 
+                               TextColor="{StaticResource PrimaryColor}" 
+                               FontSize="20" />
+                        <Frame BackgroundColor="{StaticResource AccentColor}"
+                               CornerRadius="100"
+                               HeightRequest="75"
+                               WidthRequest="75"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center">
+                            <Label x:Name="ArtistPopularity" 
+                                   TextColor="{StaticResource SecondaryColor}" 
+                                   FontSize="30" 
+                                   FontAttributes="Bold" 
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center" />
                         </Frame>
                     </StackLayout>
                 </Frame>
