@@ -39,7 +39,7 @@
       <DependentUpon>BasePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="StartPage.xaml.cs">
+    <Compile Update="HomePage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>

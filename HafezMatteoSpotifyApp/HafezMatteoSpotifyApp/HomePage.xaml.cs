@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace HafezMatteoSpotifyApp
 {
-    public partial class StartPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public StartPage()
+        public HomePage()
         {
             InitializeComponent();
             BindingContext = StartPageViewModel.Instance;

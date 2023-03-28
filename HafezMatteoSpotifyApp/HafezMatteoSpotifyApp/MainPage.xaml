@@ -8,22 +8,22 @@
              NavBarIsVisible="False">
     
     <TabBar>
-        <Tab Title="1" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.home.png}">
+        <Tab Title="Home" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.home.png}">
             <ShellContent>
-                <hafezMatteoSpotifyApp:StartPage />
+                <hafezMatteoSpotifyApp:HomePage />
             </ShellContent>
         </Tab>
-        <Tab Title="2" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.artist.png}">
+        <Tab Title="Artist" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.artist.png}">
             <ShellContent >
                 <hafezMatteoSpotifyApp:ArtistPage />
             </ShellContent>
         </Tab>
-        <Tab Title="3" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.album.png}">
+        <Tab Title="Album" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.album.png}">
             <ShellContent >
                 <hafezMatteoSpotifyApp:AlbumPage />
             </ShellContent>
         </Tab>
-        <Tab Title="4" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.custom.png}">
+        <Tab Title="Custom" Icon="{extension:ImageResource HafezMatteoSpotifyApp.Resources.Images.custom.png}">
             <ShellContent>
                 <hafezMatteoSpotifyApp:CustomPage />
             </ShellContent>
