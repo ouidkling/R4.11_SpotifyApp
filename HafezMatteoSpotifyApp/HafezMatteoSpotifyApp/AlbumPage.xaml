@@ -5,8 +5,27 @@
              x:Class="HafezMatteoSpotifyApp.AlbumPage">
     <ContentPage.Content>
         <StackLayout>
-            <Image x:Name="AlbumPicture" />
-            <Label x:Name="AlbumName" />
+            <!-- Image & Nom de l'album -->
+            <Frame BackgroundColor="{StaticResource PrimaryColor}" 
+                   CornerRadius="0"
+                   Padding="24">
+                <StackLayout>
+                    <Frame HorizontalOptions="Center"
+                           CornerRadius="20"
+                           MinimumHeightRequest="200"
+                           HeightRequest="200" 
+                           WidthRequest="200">
+                        <Image x:Name="AlbumPicture" 
+                               Aspect="AspectFill" 
+                               Margin="-20" />
+                    </Frame>
+                    <Label x:Name="AlbumName" 
+                           TextColor="{StaticResource AccentColor}"
+                           FontSize="36"
+                           HorizontalTextAlignment="Center" />
+                </StackLayout>
+            </Frame>
+            
             <Label x:Name="AlbumArtistName" />
             <Label x:Name="AlbumReleaseDate" />
             <ListView x:Name="AlbumTracks" SelectionMode="None">

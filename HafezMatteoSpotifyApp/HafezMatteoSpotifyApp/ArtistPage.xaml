@@ -13,6 +13,7 @@
                 <StackLayout>
                     <Frame HorizontalOptions="Center"
                            CornerRadius="20"
+                           MinimumHeightRequest="200"
                            HeightRequest="200" 
                            WidthRequest="200">
                         <Image x:Name="ArtistPicture" 
