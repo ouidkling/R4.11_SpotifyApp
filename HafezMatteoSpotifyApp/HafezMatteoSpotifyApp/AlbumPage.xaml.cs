@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using HafezMatteoSpotifyApp.Service;
+using SpotifyAPI.Web;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +16,12 @@ namespace HafezMatteoSpotifyApp
         public AlbumPage()
         {
             InitializeComponent();
+            FullAlbum albumClient = SpotifyService.Instance.GetSpotifyClient().Albums.Get("7K8URwf6BeFpzg7dE2TU1W").Result;
+            this.AlbumPicture.Source = albumClient.Images[0].Url;
+            this.AlbumName.Text = albumClient.Name;
+            this.AlbumArtistName.Text = albumClient.Artists[0].Name;
+            this.AlbumReleaseDate.Text = albumClient.ReleaseDate;
+            this.AlbumTracks.ItemsSource = albumClient.Tracks.Items;
         }
     }
 }
