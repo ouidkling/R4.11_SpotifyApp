@@ -26,8 +26,32 @@
                 </StackLayout>
             </Frame>
             
-            <Label x:Name="AlbumArtistName" />
-            <Label x:Name="AlbumReleaseDate" />
+            <!-- Artiste & Date de sortie -->
+            
+            <Frame BackgroundColor="{StaticResource SecondaryColor}"
+                   CornerRadius="20"
+                   Margin="30">
+                <StackLayout HeightRequest="75">
+                    <Label 
+                        Text="Genres" 
+                        TextColor="{StaticResource PrimaryColor}" 
+                        FontSize="20" />
+                    <FlexLayout AlignItems="Center"
+                        JustifyContent="SpaceBetween" 
+                        Padding="0">
+                        <Frame BackgroundColor="{StaticResource AccentColor}"
+                            CornerRadius="10"
+                            Padding="10">
+                            <Label x:Name="AlbumArtistName" />
+                        </Frame>
+                        <Frame>
+                            <Label x:Name="AlbumReleaseDate" />
+                        </Frame>
+                    </FlexLayout>
+                </StackLayout>
+            </Frame>
+            
+            
             <ListView x:Name="AlbumTracks" SelectionMode="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
