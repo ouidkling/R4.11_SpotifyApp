@@ -81,7 +81,7 @@
                                     <ViewCell>
                                         <StackLayout>
                                             <Label Text="{Binding Name}" />
-                                            <CollectionView ItemsSource="{Binding Artists}">
+                                            <CollectionView BindingContext="{Binding Artists}" ItemsSource="{Binding Artists}">
                                                 <CollectionView.ItemTemplate>
                                                     <DataTemplate>
                                                         <ViewCell>
@@ -90,6 +90,7 @@
                                                     </DataTemplate>
                                                 </CollectionView.ItemTemplate>
                                             </CollectionView>
+                                            <Label Text="test" />
                                         </StackLayout>
                                     </ViewCell>
                                 </DataTemplate>
