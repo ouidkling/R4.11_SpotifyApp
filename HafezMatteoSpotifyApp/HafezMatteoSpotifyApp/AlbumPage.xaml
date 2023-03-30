@@ -5,6 +5,7 @@
              x:Class="HafezMatteoSpotifyApp.AlbumPage">
     <ContentPage.Content>
         <StackLayout>
+            
             <!-- Image & Nom de l'album -->
             <Frame BackgroundColor="{StaticResource PrimaryColor}" 
                    CornerRadius="0"
@@ -27,10 +28,9 @@
             </Frame>
             
             <!-- Artiste & Date de sortie -->
-            
             <Frame BackgroundColor="{StaticResource SecondaryColor}"
                    CornerRadius="20"
-                   Margin="30">
+                   Margin="30, 30, 30, 10">
                 <StackLayout>
                     <Label 
                         Text="Réalisé par" 
@@ -63,18 +63,41 @@
                 </StackLayout>
             </Frame>
             
-            
-            <ListView x:Name="AlbumTracks" SelectionMode="None">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout>
-                                <Label Text="{Binding Name}" />
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <!-- Liste des titres -->
+            <Frame BackgroundColor="{StaticResource SecondaryColor}"
+                   CornerRadius="20"
+                       Margin="30, 0, 30, 30">
+                <StackLayout>
+                    <Label 
+                        Text="Titres" 
+                        TextColor="{StaticResource PrimaryColor}" 
+                        FontSize="20" />
+                    <Frame BackgroundColor="{StaticResource AccentColor}"
+                        CornerRadius="10"
+                        Padding="10">
+                        <ListView x:Name="AlbumTracks" SelectionMode="None">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Label Text="{Binding Name}" />
+                                            <CollectionView ItemsSource="{Binding Artists}">
+                                                <CollectionView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <ViewCell>
+                                                            <Label Text="{Binding Name}" />
+                                                        </ViewCell>
+                                                    </DataTemplate>
+                                                </CollectionView.ItemTemplate>
+                                            </CollectionView>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Frame>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
