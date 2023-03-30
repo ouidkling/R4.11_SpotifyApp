@@ -31,23 +31,35 @@
             <Frame BackgroundColor="{StaticResource SecondaryColor}"
                    CornerRadius="20"
                    Margin="30">
-                <StackLayout HeightRequest="75">
+                <StackLayout>
                     <Label 
-                        Text="Genres" 
+                        Text="Réalisé par" 
                         TextColor="{StaticResource PrimaryColor}" 
                         FontSize="20" />
-                    <FlexLayout AlignItems="Center"
-                        JustifyContent="SpaceBetween" 
-                        Padding="0">
-                        <Frame BackgroundColor="{StaticResource AccentColor}"
-                            CornerRadius="10"
-                            Padding="10">
-                            <Label x:Name="AlbumArtistName" />
-                        </Frame>
-                        <Frame>
-                            <Label x:Name="AlbumReleaseDate" />
-                        </Frame>
-                    </FlexLayout>
+                    <Frame BackgroundColor="{StaticResource AccentColor}"
+                           CornerRadius="10"
+                           Padding="10">
+                        <!-- Première façon de faire -->
+                        <!-- <Label x:Name="AlbumArtistRelease" 
+                               TextColor="{StaticResource SecondaryColor}" 
+                               FontSize="16" 
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center" /> -->
+                        
+                        <!-- Deuxième façon de faire -->
+                        <FlexLayout
+                            JustifyContent="SpaceBetween">
+                            <Label x:Name="AlbumArtistName" 
+                                   TextColor="{StaticResource SecondaryColor}" 
+                                   FontSize="20" 
+                                   FontAttributes="Bold"
+                                   VerticalTextAlignment="Center" />
+                            <Label x:Name="AlbumReleaseDate" 
+                                   TextColor="{StaticResource SecondaryColor}" 
+                                   FontSize="16"
+                                   VerticalTextAlignment="Center" />
+                        </FlexLayout>
+                    </Frame>
                 </StackLayout>
             </Frame>
             
