@@ -79,19 +79,8 @@
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
-                                        <StackLayout>
-                                            <Label Text="{Binding Name}" />
-                                            <CollectionView BindingContext="{Binding Artists}" ItemsSource="{Binding Artists}">
-                                                <CollectionView.ItemTemplate>
-                                                    <DataTemplate>
-                                                        <ViewCell>
-                                                            <Label Text="{Binding Name}" />
-                                                        </ViewCell>
-                                                    </DataTemplate>
-                                                </CollectionView.ItemTemplate>
-                                            </CollectionView>
-                                            <Label Text="test" />
-                                        </StackLayout>
+                                        <Label Text="{Binding Name}"
+                                               TextColor="{StaticResource SecondaryColor}" />
                                     </ViewCell>
                                 </DataTemplate>
                             </ListView.ItemTemplate>

@@ -19,6 +19,7 @@ namespace HafezMatteoSpotifyApp
             FullAlbum albumClient = SpotifyService.Instance.GetSpotifyClient().Albums.Get("7K8URwf6BeFpzg7dE2TU1W").Result;
             this.AlbumPicture.Source = albumClient.Images[0].Url;
             this.AlbumName.Text = albumClient.Name;
+            // Associé à la première façon de faire (voir fichier .xaml)
             // String albumArtistName = albumClient.Artists[0].Name;
             // String albumReleaseDate = albumClient.ReleaseDate;
             // this.AlbumArtistRelease.Text = albumArtistName + " - " + albumReleaseDate;
