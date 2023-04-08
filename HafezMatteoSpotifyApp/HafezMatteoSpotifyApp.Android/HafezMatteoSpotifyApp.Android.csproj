@@ -77,6 +77,11 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\xamarin_spotify.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\xamarin_spotify.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\xamarin_spotify.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\xamarin_spotify.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\xamarin_spotify.png" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
