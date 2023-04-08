@@ -80,7 +80,10 @@
                                 <DataTemplate>
                                     <ViewCell>
                                         <Label Text="{Binding Name}"
-                                               TextColor="{StaticResource SecondaryColor}" />
+                                               TextColor="{StaticResource SecondaryColor}"
+                                               FontAttributes="Bold" 
+                                               FontSize="16"
+                                               HorizontalTextAlignment="Center"/>
                                     </ViewCell>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
