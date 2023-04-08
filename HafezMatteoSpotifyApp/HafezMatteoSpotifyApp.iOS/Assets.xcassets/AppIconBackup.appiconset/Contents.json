@@ -1,109 +1,109 @@
-﻿{
+{
   "images": [
     {
-      "filename": "40xamarin_spotify-1.png",
+      "filename": "Icon40.png",
       "idiom": "iphone",
       "scale": "2x",
       "size": "20x20"
     },
     {
-      "filename": "60xamarin_spotify.png",
+      "filename": "Icon60.png",
       "idiom": "iphone",
       "scale": "3x",
       "size": "20x20"
     },
     {
-      "filename": "58xamarin_spotify-1.png",
+      "filename": "Icon58.png",
       "idiom": "iphone",
       "scale": "2x",
       "size": "29x29"
     },
     {
-      "filename": "87xamarin_spotify.png",
+      "filename": "Icon87.png",
       "idiom": "iphone",
       "scale": "3x",
       "size": "29x29"
     },
     {
-      "filename": "80xamarin_spotify-1.png",
+      "filename": "Icon80.png",
       "idiom": "iphone",
       "scale": "2x",
       "size": "40x40"
     },
     {
-      "filename": "120xamarin_spotify-1.png",
+      "filename": "Icon120.png",
       "idiom": "iphone",
       "scale": "3x",
       "size": "40x40"
     },
     {
-      "filename": "120xamarin_spotify.png",
+      "filename": "Icon120.png",
       "idiom": "iphone",
       "scale": "2x",
       "size": "60x60"
     },
     {
-      "filename": "180xamarin_spotify.png",
+      "filename": "Icon180.png",
       "idiom": "iphone",
       "scale": "3x",
       "size": "60x60"
     },
     {
-      "filename": "20xamarin_spotify.png",
+      "filename": "Icon20.png",
       "idiom": "ipad",
       "scale": "1x",
       "size": "20x20"
     },
     {
-      "filename": "40xamarin_spotify.png",
+      "filename": "Icon40.png",
       "idiom": "ipad",
       "scale": "2x",
       "size": "20x20"
     },
     {
-      "filename": "29xamarin_spotify.png",
+      "filename": "Icon29.png",
       "idiom": "ipad",
       "scale": "1x",
       "size": "29x29"
     },
     {
-      "filename": "58xamarin_spotify.png",
+      "filename": "Icon58.png",
       "idiom": "ipad",
       "scale": "2x",
       "size": "29x29"
     },
     {
-      "filename": "40xamarin_spotify-2.png",
+      "filename": "Icon40.png",
       "idiom": "ipad",
       "scale": "1x",
       "size": "40x40"
     },
     {
-      "filename": "80xamarin_spotify.png",
+      "filename": "Icon80.png",
       "idiom": "ipad",
       "scale": "2x",
       "size": "40x40"
     },
     {
-      "filename": "76xamarin_spotify.png",
+      "filename": "Icon76.png",
       "idiom": "ipad",
       "scale": "1x",
       "size": "76x76"
     },
     {
-      "filename": "152xamarin_spotify.png",
+      "filename": "Icon152.png",
       "idiom": "ipad",
       "scale": "2x",
       "size": "76x76"
     },
     {
-      "filename": "167xamarin_spotify.png",
+      "filename": "Icon167.png",
       "idiom": "ipad",
       "scale": "2x",
       "size": "83.5x83.5"
     },
     {
-      "filename": "1024xamarin_spotify.png",
+      "filename": "Icon1024.png",
       "idiom": "ios-marketing",
       "scale": "1x",
       "size": "1024x1024"
