@@ -5,9 +5,25 @@
              x:Class="HafezMatteoSpotifyApp.CustomPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="I am Custom Page !"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+            <Frame BackgroundColor="{StaticResource PrimaryColor}" 
+                   CornerRadius="0"
+                   Padding="24">
+                <StackLayout>
+                    <Frame HorizontalOptions="Center"
+                           CornerRadius="20"
+                           MinimumHeightRequest="200"
+                           HeightRequest="200" 
+                           WidthRequest="200">
+                        <Image x:Name="AlbumPicture" 
+                               Aspect="AspectFill" 
+                               Margin="-20" />
+                    </Frame>
+                    <Label x:Name="AlbumName" 
+                           TextColor="{StaticResource AccentColor}"
+                           FontSize="36"
+                           HorizontalTextAlignment="Center" />
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

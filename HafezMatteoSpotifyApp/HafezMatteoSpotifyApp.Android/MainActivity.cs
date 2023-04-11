@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Net;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -12,6 +12,8 @@ namespace HafezMatteoSpotifyApp.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
+            
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
