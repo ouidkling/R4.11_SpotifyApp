@@ -9,7 +9,6 @@ namespace HafezMatteoSpotifyApp
         public MainPage()
         {
             InitializeComponent();
-            SetNavBarIsVisible(this, false);
         }
     }
 }
