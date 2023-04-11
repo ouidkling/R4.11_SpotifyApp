@@ -4,7 +4,7 @@ from spotipy.oauth2 import SpotifyOAuth
 if __name__ == "__main__":
     clientId = 'LE_CLIENT'
     clientSecret = 'LE_CLIENT_SECRET'
-    scope = 'user-read-private user-read-email'
+    scope = 'user-read-private user-read-email playlist-read-private'
     redirectURI = 'http://localhost'    # Attention à ce que la redirection soit whitelist !
     authManager = SpotifyOAuth(
         client_id=clientId,
