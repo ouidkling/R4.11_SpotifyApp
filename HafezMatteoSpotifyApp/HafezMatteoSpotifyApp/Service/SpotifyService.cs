@@ -8,7 +8,9 @@ namespace HafezMatteoSpotifyApp.Service
 {
     public class SpotifyService
     {
-        // private const string TokenSpotify = "LE_TOKEN";
+        private const string TokenSpotify = "LE_TOKEN";
+        // private const string ClientId = "LE_CLIENT";
+        // private const string ClientSecret = "LE_CLIENT_SECRET";
         
         private SpotifyClient _spotifyClient;
         #region Instance
@@ -21,13 +23,15 @@ namespace HafezMatteoSpotifyApp.Service
         {
             try
             {
-                // _spotifyClient = new SpotifyClient(TokenSpotify);
+                _spotifyClient = new SpotifyClient(TokenSpotify);
                 
+                /*
                 var config = SpotifyClientConfig
                     .CreateDefault()
-                    .WithAuthenticator(new ClientCredentialsAuthenticator("LE_CLIENT", "LE_CLIENT_SECRET"));
+                    .WithAuthenticator(new ClientCredentialsAuthenticator(ClientId, ClientSecret));
                 
                 _spotifyClient = new SpotifyClient(config);
+                */
                 return await Task.FromResult(true);
             }
             catch (Exception exception)
