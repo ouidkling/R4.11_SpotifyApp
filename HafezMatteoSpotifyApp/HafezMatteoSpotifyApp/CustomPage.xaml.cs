@@ -19,8 +19,10 @@ namespace HafezMatteoSpotifyApp
         {
             InitializeComponent();
             PrivateUser userClient = SpotifyService.Instance.GetSpotifyClient().UserProfile.Current().Result;
-            this.AlbumPicture.Source = userClient.Images[0].Url;    // Ne charge pas à cause du certificat
-            this.AlbumName.Text = userClient.DisplayName;
+            this.ProfilePicture.Source = userClient.Images[0].Url;    // Ne charge pas à cause du certificat
+            this.Username.Text = userClient.DisplayName;
+            Paging<SimplePlaylist> userPlaylistsClient = SpotifyService.Instance.GetSpotifyClient().Playlists.CurrentUsers().Result;
+            this.UserPlaylists.BindingContext = userPlaylistsClient.Items;
         }
     }
 }
