@@ -30,6 +30,11 @@
                         Value="{StaticResource SecondaryColor}"/>
             </Style>
             
+            <Style TargetType="{x:Type ImageButton}">
+                <Setter Property="BackgroundColor" 
+                        Value="{StaticResource PrimaryColor}"/>
+            </Style>
+            
             <Style TargetType="{x:Type Label}">
                 <Setter Property="TextColor" 
                         Value="{StaticResource PrimaryColor}"/>
