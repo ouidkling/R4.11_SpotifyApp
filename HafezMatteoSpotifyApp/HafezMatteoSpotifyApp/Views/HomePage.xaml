@@ -24,7 +24,8 @@
         
         <Label Text="Proposée par MADI Hafez et NADLER CAMPOURCY Mattéo" 
                FontSize="16" 
-               Padding="30,0" />
+               Padding="30,0" 
+               HorizontalTextAlignment="Center" />
         
         <!-- Images -->
         <FlexLayout AlignItems="Center"
