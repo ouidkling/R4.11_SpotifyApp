@@ -45,16 +45,13 @@
                                         <DataTemplate>
                                             <FlexLayout AlignItems="Center">
                                                 <Frame CornerRadius="5"
-                                                       MinimumHeightRequest="15"
-                                                       MinimumWidthRequest="65"
-                                                       HeightRequest="15"
-                                                       WidthRequest="65"
-                                                       FlexLayout.Shrink="1">
+                                                       HeightRequest="20"
+                                                       FlexLayout.Basis="20%">
                                                     <Image Source="{Binding Images[0].Url}"
                                                            Aspect="AspectFill"
                                                            Margin="-20" />
                                                 </Frame>
-                                                <StackLayout>
+                                                <StackLayout FlexLayout.Basis="65%">
                                                     <Label Text="{Binding Name}"
                                                                    TextColor="{StaticResource SecondaryColor}"
                                                                    FontAttributes="Bold" 
@@ -66,6 +63,12 @@
                                                         <Label Text=" titres" />
                                                     </FlexLayout>
                                                 </StackLayout>
+                                                <ImageButton Source="https://cdn.discordapp.com/attachments/495270911704825871/1095772377239003327/Black-Play-Button-PNG-Free-Download_1.png"
+                                                             HorizontalOptions="Center"
+                                                             HeightRequest="45"
+                                                             Padding="5"
+                                                             Clicked="PlayRandomMusic"
+                                                             FlexLayout.Basis="15%" />
                                             </FlexLayout>
                                         </DataTemplate>
                                     </BindableLayout.ItemTemplate>
